@@ -6,10 +6,12 @@ def all_anagrams(words):
         if type(i) != str:
             return False
         else:
-            usporadana_slova.append(sorted(i))
-    for i in range(len(usporadana_slova)):
-        if usporadana_slova[i] in usporadana_slova[i:]:
-            return True
+            usporadana_slova.append(sorted(i.lower()))
+    if len(usporadana_slova) == usporadana_slova.count(usporadana_slova[0]):
+        return True
+    else:
+        return False
 
-print(all_anagrams(['ship', 'hips', 'name']))
+
+print(all_anagrams(["Hist","This","Hits","Shit","tsih","sthi","name"]))
 
