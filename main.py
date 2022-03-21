@@ -13,5 +13,7 @@ def all_anagrams(words):
         return False
 
 
-print(all_anagrams(["Hist","This","Hits","Shit","tsih","sthi","name"]))
+print(all_anagrams([1,2,3,4,"pes"]))
+
+
 
